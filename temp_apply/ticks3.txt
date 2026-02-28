@@ -1,0 +1,40 @@
+11: const G = `
+162: `;
+318: <div className={`cursor${hovering ? ' hovering' : ''}`} style={{ left: pos.x - 6, top: pos.y - 6 }} />
+337: <style>{`.nav-ham{display:flex;flex-direction:column;gap:5px;width:22px;} .nav-ham span{display:block;height:1px;background:#F5F4F0;transition:all .3s;}`}</style>
+338: <nav className={`nav${scrollY > 30 ? ' scrolled' : ''}`}>
+341: {links.map(l => <li key={l.key}><span className={`nav-link${page === l.key ? ' active' : ''}`} onClick={() => setPage(l.key)} data-hover>{l.label}</span></li>)}
+378: <style>{`
+421: `}</style>
+466: <style>{`.vert-cell[data-id="${v.id}"]::before{background:${v.dot};} .vert-cell:hover{background:${v.dot}08;}`}</style>
+525: <style>{`
+535: `}</style>
+542: {roles.map(r => <button key={r} className={`tag${filter === r ? ' active' : ''}`} onClick={() => setFilter(r)} data-hover>{r}</button>)}
+592: ? <button className="btn btn-ignite" style={{ width: '100%', justifyContent: 'center' }} onClick={() => { showToast(`Request sent to ${t.name}!`); onClose(); }}>Request to Connect</button>
+603: <style>{`
+621: `}</style>
+704: <style>{`
+733: `}</style>
+811: <style>{`
+829: `}</style>
+967: <style>{`
+1035: \`}</style>
+1107: <div key={n} className={\`ts-step-dot \${step === n ? 'active' : step > n ? 'done' : ''}\`}/>
+1169: <button key={s} className={\`ts-skill-tag \${form.skills.includes(s) ? 'active' : ''}\`} onClick={() => toggleSkill(s)}>{s}</button>
+1216: <div style={{ marginTop: 16, padding: '12px 16px', background: 'rgba(245,244,240,.03)', borderLeft: \`2px solid \${form.rate < 60 ? '#888880' : form.rate < 120 ? C.ignite : C.surge}\` }}>
+1229: padding: '10px 18px', border: \`1px solid \${form.availability === a ? C.ignite : 'rgba(245,244,240,.1)'}\`,
+1280: <style>{`
+1371: \`}</style>
+1405: <div style={{ position: 'absolute', top: 0, left: 0, height: '100%', background: C.blueprint, width: \`\${(step / 3) * 100}%\`, transition: 'width .4s ease' }}/>
+1408: position: 'absolute', top: -4, left: \`\${((n - 1) / 2) * 100}%\`,
+1410: border: \`1px solid \${step >= n ? C.blueprint : 'rgba(28,63,255,.2)'}\`,
+1443: <span key={s} className={\`build-tag \${form.stage === s ? 'active' : ''}\`} onClick={() => upd('stage', s)}>{s}</span>
+1452: <span key={v} className={\`build-tag \${form.vertical === v ? 'active' : ''}\`} onClick={() => upd('vertical', v)}>{v}</span>
+1469: <div key={s.id} className={\`build-card-select \${form.service === s.id ? 'active' : ''}\`} onClick={() => upd('service', s.id)}>
+1519: <span key={o} className={\`build-tag \${form.cto === o ? 'active' : ''}\`} style={{ margin: 0 }} onClick={() => upd('cto', o)}>{o}</span>
+1633: <style>{`
+1712: \`}</style>
+1877: <button key={s} className={\`acc-stage-option \${form.stage === s ? 'active' : ''}\`} onClick={() => upd('stage', s)}>{s}</button>
+1970: <style>{`
+1989: `}</style>
+2001: <div className={`app-overlay ${navState.fading ? 'fading' : ''}`}>
