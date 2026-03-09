@@ -1211,10 +1211,17 @@ function TalentSignIn({ setAuthMode }) {
                             </div>
                         </div>
                     </div>
-                    <div style={{ padding: '24px 40px', borderTop: '1px solid rgba(245,244,240,.06)' }}>
-                        <div style={{ fontFamily: "'DM Mono',monospace", fontSize: 11, color: '#888880', lineHeight: 1.6 }}>
-                            1,200+ verified builders · 34 countries
-                        </div>
+                    <div style={{ padding: '24px 40px', display: 'flex', gap: 0, borderTop: '1px solid rgba(245,244,240,.06)' }}>
+                        {[{ n: '1,200+', l: 'Builders' }, { n: '34', l: 'Countries' }, { n: '$95', l: 'Avg Rate' }].map((s, i) => (
+                            <div key={s.l} style={{
+                                flex: 1, paddingRight: 24,
+                                borderRight: i < 2 ? '1px solid rgba(245,244,240,.06)' : 'none',
+                                paddingLeft: i > 0 ? 24 : 0
+                            }}>
+                                <div style={{ fontFamily: "'DM Serif Display',serif", fontSize: 26, color: '#F5F4F0', letterSpacing: '-.02em' }}>{s.n}</div>
+                                <div style={{ fontFamily: "'DM Mono',monospace", fontSize: 9, letterSpacing: '.12em', textTransform: 'uppercase', color: '#888880', marginTop: 3 }}>{s.l}</div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             )}
